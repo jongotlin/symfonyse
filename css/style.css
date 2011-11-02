@@ -637,6 +637,7 @@ article { zoom: 1; }
     -moz-border-radius: 16px;
     -webkit-border-radius: 16px;
     border-radius: 16px;
+    margin: 0 0 30px;
     padding: 40px 50px;
 }
 
@@ -647,6 +648,33 @@ article { zoom: 1; }
 .article aside {
     float: right;
     width: 28%;
+}
+
+/** =FRONT ---------- */
+
+/**
+ * Developers
+ */
+
+.developers {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    width: 100%;
+}
+
+.developers li {
+    float: left;
+    width: 33%;
+}
+
+.developers img {
+    float: left;
+    margin-right: 10px;
+}
+
+.developers .name {
+    display: block;
 }
 
 /** =GITHUB FORK ---------- */
