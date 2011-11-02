@@ -667,11 +667,13 @@ article { zoom: 1; }
 .developers li {
     float: left;
     width: 33%;
+    padding-bottom: 20px;
 }
 
 .developers img {
     float: left;
     margin-right: 10px;
+    padding-top: 3px;
 }
 
 .developers .name,
