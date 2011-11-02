@@ -673,8 +673,20 @@ article { zoom: 1; }
     margin-right: 10px;
 }
 
-.developers .name {
+.developers .name,
+.developers .github,
+.developers .twitter {
     display: block;
+}
+
+.developers .name a {
+    color: #000;
+    font-weight: bold;
+}
+
+.developers .github a,
+.developers .twitter a {
+    font-size: 12px;
 }
 
 /** =GITHUB FORK ---------- */
