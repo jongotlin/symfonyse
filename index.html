@@ -6,11 +6,13 @@
 
 		<title>Symfony Sverige</title>
 		<meta name="description" content="Svensk användargrupp för PHP-ramverket Symfony.">
-  		<meta name="author" content="Symfony Sverige">
+  	<meta name="author" content="Symfony Sverige">
 
-  		<link rel="stylesheet" href="/css/style.css">
+  	<link rel="stylesheet" href="/css/style.css">
+  	<link href="/js/libs/syntaxhighlighter/styles/shCore.css" rel="stylesheet" type="text/css">
+		<link href="/js/libs/syntaxhighlighter/styles/shThemeDefault.css" rel="stylesheet" type="text/css">
 
-  		<script src="/js/libs/modernizr-2.0.6.min.js"></script>
+  	<script src="/js/libs/modernizr-2.0.6.min.js"></script>
 	</head>
 	<body>
 
@@ -135,6 +137,42 @@
               margin: 0 -240px 0 0;
               width: 100%;
           }</pre>
+          <p>Now some code highlighting magic!</p>
+          <h4>CSS</h4>
+<pre class="brush: css">#container {
+    float: left;
+    margin: 0 -240px 0 0;
+    width: 100%;
+}</pre>
+					<h4>HTML</h4>
+<pre class="brush: xml">
+	&lt;h1>Hello World!&lt;/h1>
+	&lt;p>There's foo and bar.&lt;/p>
+</pre>
+					<h4>JavaScript</h4>
+<pre class="brush: javascript">
+window.log = function(){
+  log.history = log.history || [];   // store logs to an array for reference
+  log.history.push(arguments);
+  if(this.console) {
+    arguments.callee = arguments.callee.caller;
+    var newarr = [].slice.call(arguments);
+    (typeof console.log === 'object' ? log.apply.call(console.log, console, newarr) : console.log.apply(console, newarr));
+  }
+};
+</pre>
+					<h4>PHP</h4>
+<pre class="brush: php">
+require_once __DIR__.'/silex.phar'; 
+
+$app = new Silex\Application(); 
+
+$app->get('/hello/{name}', function($name) use($app) { 
+    return 'Hello '.$app->escape($name); 
+}); 
+
+$app->run();
+</pre>
           <p>Want to quote the WordPress tagline <q>Code is Poetry</q>? Use the <code>&lt;q&gt;</code> tag to add quotes around it. <strong>This is strong text</strong> (otherwise known as bold), using the <code>&lt;strong&gt;</code> tag.</p>
           <p>Need to write H<sub>2</sub>O or E = MC<sup>2</sup>? You may find great use for <sub>subscripting</sub> text using the <code>&lt;sub&gt;</code> tag, or for <sup>superscripting</sup> text using the <code>&lt;sup&gt;</code> tag. Need to call out a <var>variable</var>? Use the <code>&lt;var&gt;</code> tag.</p>
           <h2>Div and Span Tests</h2>
@@ -159,6 +197,16 @@
     	g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
     	s.parentNode.insertBefore(g,s)}(document,'script'));
   	</script>
+
+  	<script type="text/javascript" src="/js/libs/syntaxhighlighter/scripts/shCore.js"></script>
+  	<script type="text/javascript" src="/js/libs/syntaxhighlighter/scripts/shBrushCss.js"></script>
+		<script type="text/javascript" src="/js/libs/syntaxhighlighter/scripts/shBrushJScript.js"></script>
+		<script type="text/javascript" src="/js/libs/syntaxhighlighter/scripts/shBrushPhp.js"></script>
+		<script type="text/javascript" src="/js/libs/syntaxhighlighter/scripts/shBrushXml.js"></script>
+
+		<script type="text/javascript">
+    	SyntaxHighlighter.all()
+		</script>
 
   	<!--[if (gte IE 6)&(lte IE 8)]>
   		<script type="text/javascript" src="/js/libs/selectivizr-min.js"></script>

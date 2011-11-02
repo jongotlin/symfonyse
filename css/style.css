@@ -248,7 +248,7 @@ li ol {
 
 ul,
 ol {
-    list-style: disc outside;
+    list-style: disc inside;
     margin: 0 0 20px;
 }
 
