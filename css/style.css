@@ -669,6 +669,10 @@ article { zoom: 1; }
     padding-bottom: 20px;
 }
 
+.developers li:nth-child(3n+1) {
+    clear: both;
+}
+
 .developers img {
     float: left;
     margin-right: 10px;
