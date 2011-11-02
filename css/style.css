@@ -618,8 +618,16 @@ article { zoom: 1; }
     padding: 30px 50px;
 }
 
-.article-header p:last-child {
+.article-header h1 {
     margin: 0;
+}
+
+.article-header h1 + p {
+    margin-top: 25px;
+}
+
+.article-header p:last-child {
+    margin-bottom: 0;
 }
 
 .article-content {
