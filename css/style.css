@@ -641,6 +641,15 @@ article { zoom: 1; }
     width: 28%;
 }
 
+/** =GITHUB FORK ---------- */
+
+#github-fork-me {
+	border: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
 /** =USEFUL CLASSES ---------- */
 
 /* For image replacement */
