@@ -684,9 +684,12 @@ article { zoom: 1; }
     display: block;
 }
 
+.developers .name {
+    font-weight: bold;
+}
+
 .developers .name a {
     color: #000;
-    font-weight: bold;
 }
 
 .developers .social a {
