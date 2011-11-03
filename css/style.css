@@ -680,8 +680,7 @@ article { zoom: 1; }
 }
 
 .developers .name,
-.developers .github,
-.developers .twitter {
+.developers .social {
     display: block;
 }
 
@@ -690,8 +689,7 @@ article { zoom: 1; }
     font-weight: bold;
 }
 
-.developers .github a,
-.developers .twitter a {
+.developers .social a {
     font-size: 12px;
 }
 
