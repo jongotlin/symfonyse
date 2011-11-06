@@ -678,6 +678,9 @@ article { zoom: 1; }
     margin-right: 10px;
     padding-top: 3px;
 }
+.developers span {
+    padding-left: 90px;
+}
 
 .developers .name,
 .developers .social {
