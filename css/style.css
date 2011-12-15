@@ -656,7 +656,7 @@ article { zoom: 1; }
  * Developers
  */
 
-.developers {
+.developers > ul {
     display: inline-block;
     list-style: none;
     margin: 0;
@@ -665,38 +665,15 @@ article { zoom: 1; }
 
 .developers li {
     float: left;
-    width: 33%;
-    padding-bottom: 20px;
+    padding-right: 19px;
 }
 
-.developers li:nth-child(3n+1) {
-    clear: both;
+.developers li:nth-child(6n) {
+    padding-right: 0;
 }
 
-.developers img {
-    float: left;
-    margin-right: 10px;
-    padding-top: 3px;
-}
-.developers span {
-    padding-left: 90px;
-}
-
-.developers .name,
-.developers .social {
-    display: block;
-}
-
-.developers .name {
-    font-weight: bold;
-}
-
-.developers .name a {
-    color: #000;
-}
-
-.developers .social a {
-    font-size: 12px;
+.developers li:nth-child(1n+7) {
+    padding-top: 19px;
 }
 
 /** =GITHUB FORK ---------- */
