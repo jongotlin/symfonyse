@@ -549,6 +549,23 @@ article:after { clear: both; }
 section,
 article { zoom: 1; }
 
+/** =TYPOGRAPHY ---------- */
+
+.notice {
+    background: #AACD4E;
+    -moz-border-radius: 16px;
+    -o-border-radius: 16px;
+    -webkit-border-radius: 16px;
+    border-radius: 16px;
+    color: #fff;
+    margin: 0 0 30px;
+    padding: 40px 50px;
+}
+
+.notice a {
+    color: #fff;
+}
+
 /** =HEADER ---------- */
 
 #header {
@@ -603,8 +620,6 @@ article { zoom: 1; }
 	padding: 0 10px;
 }
 
-
-
 /** =ARTICLES ---------- */
 
 .article-header {
@@ -633,8 +648,8 @@ article { zoom: 1; }
 .article-content {
     background: #FFF;
     border: 1px solid #DFDFDF;
-    -o-border-radius: 16px;
     -moz-border-radius: 16px;
+    -o-border-radius: 16px;
     -webkit-border-radius: 16px;
     border-radius: 16px;
     margin: 0 0 30px;
