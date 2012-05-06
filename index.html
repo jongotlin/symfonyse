@@ -9,7 +9,7 @@
         <meta name="author" content="Symfony Sverige">
         <meta name="Keywords" content="symfony2, symfony, project, framework, php, php5, open-source, components, symphony, symfony framework, symfony tutorial">
 
-        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/style.css?1">
         <link href="/js/libs/syntaxhighlighter/styles/shCore.css" rel="stylesheet" type="text/css">
         <link href="/js/libs/syntaxhighlighter/styles/shThemeDefault.css" rel="stylesheet" type="text/css">
 
@@ -28,13 +28,6 @@
             <!-- / #navigation -->
         </header>
         <!-- / #header -->
-
-        <article class="notice">
-            <h1>Meetup: Workshop för nybörjare</h1>
-            <p>Lördag den 5 maj är det dags för en halvdags workshop för dig som är nybörjare och vill komma igång med Symfony!</p>
-            <p><a href="http://meetup.symfony.se">Mer information och anmälan</a></p>
-        </article>
-        <!-- / .notice -->
 
         <article class="article">
 
@@ -69,11 +62,20 @@
                     <ul>
                         {{#members}}
                         <li>
-                            <a href="{{url}}" title="{{display_name}}">
-                                <img src="{{picture_url}}?format=user_medium">
-                            </a>
+                            <img src="{{picture_url}}">
+                            <a href="{{url}}" title="{{display_name}}">{{display_name}}</a>
                         </li>
                         {{/members}}
+                    </ul>
+                    
+                    <ul>
+                        {{#cumulated_badges}}
+                        <li>
+                            <a href="{{url}}" title="{{name}}">
+                                <img src="{{picture_url}}">
+                            </a>
+                        </li>
+                        {{/cumulated_badges}}
                     </ul>
 
                     <p>Gå med i <a href="https://connect.sensiolabs.com/club/symfony-se">vår klubb på Sensio Connect</a> så dyker du automatiskt upp i listan.</p>
@@ -99,7 +101,7 @@
 
         <script type="text/javascript">
             $(function() {
-                $.getJSON('https://connect.sensiolabs.com/club/symfony-se', function(data) {
+                $.getJSON('https://connect.sensiolabs.com/club/symfony-se.json', function(data) {
                     // Randomly ordered list.
                     data.members = data.members.sort(function() {
                         return Math.round(Math.random());
